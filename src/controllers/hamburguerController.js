@@ -15,7 +15,7 @@ router.post("/register", async (req, res) => {
 
 router.get("/view", async (req, res) => {
   try {
-    console.log(await Hamburger.find());
+    // console.log(await Hamburger.find());
     return res.json(await Hamburger.find());
   } catch (err) {
     return res.status(400).send({ error: "Get Hamburguer Name Falid!" });
@@ -23,7 +23,7 @@ router.get("/view", async (req, res) => {
 });
 router.get("/view/:name", async (req, res) => {
   try {
-    console.log(await Hamburger.find({ name: req.params.name }));
+    // console.log(await Hamburger.find({ name: req.params.name }));
     return res.json(await Hamburger.find({ name: req.params.name }));
   } catch (err) {
     return res.status(400).send({ error: "Get Hamburguer Falid!" });

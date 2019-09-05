@@ -15,8 +15,9 @@ const HamburguerSchema = new moongose.Schema({
     }
   ],
   img: {
-    data: Buffer,
-    contentType: String
+    type: String,
+    default:
+      "https://yata.ostr.locaweb.com.br/9709eaea2a20f9ad958d6bb3d6c1ffeae7b02eaa1af5e7bfefc4df8de35d47f4"
   }
 });
 
